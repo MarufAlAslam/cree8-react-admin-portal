@@ -12,3 +12,35 @@
     color: #fff;
     border-color: #0F4C7D;
 }
+
+
+/* topbar */
+.topbar{
+    background-color: #0F4C7D;
+    color: #fff;
+}
+
+/* sidebar */
+a.active, a.active * {
+    color: #0F4C7D !important;
+    stroke: #0F4C7D;
+    font-weight: 500;
+}
+
+
+/* dashboard */
+.text-blue{
+    color: #0F4C7D;
+}
+
+
+/* table */
+td.border.w-full.p-2 {
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+/* productivity */
+.productivity{
+    background-color: #D5E9FE;
+}

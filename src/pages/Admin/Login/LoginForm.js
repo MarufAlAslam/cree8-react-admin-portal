@@ -3,7 +3,7 @@ import React from 'react'
 const LoginForm = () => {
     return (
         <div>
-            <form>
+            <form action='/admin/dashboard'>
                 <div className='mb-6'>
                     <label className='block text-gray-700 text-sm mb-3' htmlFor='email'>
                         E-mail
@@ -32,7 +32,7 @@ const LoginForm = () => {
                         <input type='checkbox' id='rem' className='mr-2' />
                         <label htmlFor='rem' className='text-sm'>Remember me</label>
                     </div>
-                    <a className='inline-block align-baseline text-sm text-blue-500 hover:text-blue-800' href='#'>
+                    <a className='inline-block align-baseline text-sm text-blue-500 hover:text-blue-800' href='/'>
                         Forgot Password?
                     </a>
                 </div>
@@ -41,7 +41,7 @@ const LoginForm = () => {
                 <div className='flex items-center justify-between'>
                     <button
                         className='btn-blue w-full mt-5 py-3 hover:bg-blue-700 text-white px-4 rounded focus:outline-none focus:shadow-outline'
-                        type='button'
+                        type='submit'
                     >
                         Sign In
                     </button>
