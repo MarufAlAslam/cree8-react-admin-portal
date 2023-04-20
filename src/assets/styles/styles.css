@@ -44,3 +44,15 @@ td.border.w-full.p-2 {
 .productivity{
     background-color: #D5E9FE;
 }
+
+/* input focus */
+input:focus, textarea:focus, select:focus{
+    box-shadow: unset !important;
+    outline: unset !important;
+}
+
+
+/* tttable */
+.tttable td{
+    width: 25%;
+}
