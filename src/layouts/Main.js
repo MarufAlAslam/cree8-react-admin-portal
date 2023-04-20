@@ -1,10 +1,10 @@
 import React from 'react'
+import { RouterProvider } from 'react-router-dom'
+import router from '../utils/routes/Main.routes'
 
 const Main = () => {
     return (
-        <div>
-            Main Page
-        </div>
+        <RouterProvider router={router}></RouterProvider>
     )
 }
 
