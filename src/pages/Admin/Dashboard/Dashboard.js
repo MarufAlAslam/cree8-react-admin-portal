@@ -9,7 +9,7 @@ const Dashboard = () => {
             name: "Worksites",
             value: "05",
             details: "Active worksites",
-            linkto: "/admin/worksites"
+            linkto: "/admin/worksite"
         },
         {
             name: "Companies ",
@@ -19,7 +19,7 @@ const Dashboard = () => {
         },
     ]
     return (
-        <div className='p-6'>
+        <div className='py-14 px-20'>
             <div className='top-row mb-6'>
                 <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
                     {companyData.map((item, index) => (
@@ -53,7 +53,7 @@ const Dashboard = () => {
                     <input type="date" />
                 </div>
 
-                <Timelines/>
+                <Timelines />
             </div>
         </div>
 

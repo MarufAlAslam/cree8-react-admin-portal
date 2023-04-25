@@ -34,7 +34,7 @@ const Timelines = () => {
                 }
             ]
         },
-         {
+        {
             chart: [
                 {
                     remaining: 55,
@@ -65,7 +65,7 @@ const Timelines = () => {
                 }
             ]
         },
-         {
+        {
             chart: [
                 {
                     remaining: 55,
@@ -96,7 +96,7 @@ const Timelines = () => {
                 }
             ]
         },
-         {
+        {
             chart: [
                 {
                     remaining: 55,
@@ -127,7 +127,7 @@ const Timelines = () => {
                 }
             ]
         },
-         {
+        {
             chart: [
                 {
                     remaining: 55,
@@ -158,7 +158,7 @@ const Timelines = () => {
                 }
             ]
         },
-         {
+        {
             chart: [
                 {
                     remaining: 55,
@@ -194,7 +194,7 @@ const Timelines = () => {
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-6'>
             {
                 timelines.map((item, index) => (
-                    <div className='bg-white rounded-lg' key={index}>
+                    <div className='bg-white dash-card rounded-lg' key={index}>
                         <div className='stat d-flex'>
                             {
                                 item.chart.map((chart, index) => (
@@ -231,35 +231,35 @@ const Timelines = () => {
 
                         <div className='chart-details flex mt-3 text-sm justify-center items-center'>
                             <div className='item mx-3 flex justify-center items-center text-sm'>
-                                <div className='w-4 h-4 bg-[#FF922B] rounded-full mr-2'></div>
+                                <div className='w-4 h-4 bg-[#FF922B] mr-2'></div>
                                 <p className='text-gray-500'>
                                     Remaining
                                 </p>
                             </div>
 
                             <div className='item mx-3 flex justify-center items-center text-sm'>
-                                <div className='w-4 h-4 bg-[#40C057] rounded-full mr-2'></div>
+                                <div className='w-4 h-4 bg-[#40C057] mr-2'></div>
                                 <p className='text-gray-500'>
                                     Worked
                                 </p>
                             </div>
 
                             <div className='item mx-3 flex justify-center items-center text-sm'>
-                                <div className='w-4 h-4 bg-[#748FFC] rounded-full mr-2'></div>
+                                <div className='w-4 h-4 bg-[#748FFC] mr-2'></div>
                                 <p className='text-gray-500'>
                                     Reserved
                                 </p>
                             </div>
 
                             <div className='item mx-3 flex justify-center items-center text-sm'>
-                                <div className='w-4 h-4 bg-[#FFD43B] rounded-full mr-2'></div>
+                                <div className='w-4 h-4 bg-[#FFD43B] mr-2'></div>
                                 <p className='text-gray-500'>
                                     Deficiet
                                 </p>
                             </div>
 
                             <div className='item mx-3 flex justify-center items-center text-sm'>
-                                <div className='w-4 h-4 bg-[#F03E3E] rounded-full mr-2'></div>
+                                <div className='w-4 h-4 bg-[#F03E3E] mr-2'></div>
                                 <p className='text-gray-500'>
                                     Lost
                                 </p>
@@ -277,9 +277,10 @@ const Timelines = () => {
                                         </div>
                                         <div className='job__details pl-4'>
                                             <p>
-                                                <span className='text-gray-500'>
-                                                    Job Number:
+                                                <span className='text-[#A1A1A1]'>
+                                                    Job Number :
                                                 </span>
+                                                &nbsp;
                                                 <span>
                                                     {
                                                         job.jobNumber
@@ -293,7 +294,7 @@ const Timelines = () => {
                                                 }
                                             </p>
                                             <p>
-                                                <span className='text-gray-500'>
+                                                <span className='text-[#A1A1A1]'>
                                                     Site Manager:
                                                 </span>
                                                 <span>
@@ -315,7 +316,7 @@ const Timelines = () => {
                                     <tbody key={index}>
                                         <tr>
                                             <td className='border w-full p-2'>
-                                                <span className='tedxt-gray-500'>
+                                                <span className='text-[#A1A1A1]'>
                                                     Areas
                                                 </span>
                                             </td>
@@ -327,7 +328,7 @@ const Timelines = () => {
                                         </tr>
                                         <tr>
                                             <td className='border w-full p-2'>
-                                                <span className='tedxt-gray-500'>
+                                                <span className='text-[#A1A1A1]'>
                                                     Workers
                                                 </span>
                                             </td>
@@ -339,7 +340,7 @@ const Timelines = () => {
                                         </tr>
                                         <tr>
                                             <td className='border w-full p-2'>
-                                                <span className='tedxt-gray-500'>
+                                                <span className='text-[#A1A1A1]'>
                                                     Project Cost
                                                 </span>
                                             </td>
@@ -351,7 +352,7 @@ const Timelines = () => {
                                         </tr>
                                         <tr>
                                             <td className='border w-full p-2'>
-                                                <span className='tedxt-gray-500'>
+                                                <span className='text-[#A1A1A1]'>
                                                     TOtal Spent
                                                 </span>
                                             </td>
@@ -376,44 +377,44 @@ const Timelines = () => {
                                 item.productivity.map((productivity, index) => (
                                     <tbody key={index}>
                                         <tr>
-                                            <td className='border p-2 w-1/4 text-center'>
-                                                <span className='tedxt-gray-500'>
+                                            <td className='border-none p-2 w-1/4 text-center'>
+                                                <span className='text-[#A1A1A1]'>
                                                     Total
                                                 </span>
                                             </td>
-                                            <td className='border w-1/4 p-2 text-center'>
-                                                <span className='tedxt-gray-500'>
+                                            <td className='border-none w-1/4 p-2 text-center'>
+                                                <span className='text-[#A1A1A1]'>
                                                     Approved
                                                 </span>
                                             </td>
-                                            <td className='border w-1/4 p-2 text-center'>
-                                                <span className='tedxt-gray-500'>
+                                            <td className='border-none w-1/4 p-2 text-center'>
+                                                <span className='text-[#A1A1A1]'>
                                                     Active
                                                 </span>
                                             </td>
-                                            <td className='border w-1/4 p-2 text-center'>
-                                                <span className='tedxt-gray-500'>
+                                            <td className='border-none w-1/4 p-2 text-center'>
+                                                <span className='text-[#A1A1A1]'>
                                                     Remaining
                                                 </span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td className='border w-1/4 p-2 text-center'>
+                                            <td className='border-none w-1/4 p-2 text-center'>
                                                 <span>
                                                     {productivity.total}
                                                 </span>
                                             </td>
-                                            <td className='border w-1/4 p-2 text-center'>
+                                            <td className='border-none w-1/4 p-2 text-center'>
                                                 <span>
                                                     {productivity.approved}
                                                 </span>
                                             </td>
-                                            <td className='border w-1/4 p-2 text-center'>
+                                            <td className='border-none w-1/4 p-2 text-center'>
                                                 <span>
                                                     {productivity.active}
                                                 </span>
                                             </td>
-                                            <td className='border w-1/4 p-2 text-center'>
+                                            <td className='border-none w-1/4 p-2 text-center'>
                                                 <span>
                                                     {productivity.remaining}
                                                 </span>

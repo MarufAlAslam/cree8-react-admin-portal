@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Lexend', sans-serif;
+}
 .login{
-    background-color: #0F4C7D;
+    background-color: #D5E9FE;
 }
 .fs-21{
     font-size: 21px;
@@ -31,6 +35,15 @@ a.active, a.active * {
 /* dashboard */
 .text-blue{
     color: #0F4C7D;
+}
+
+.dash-card{
+    border: 2px solid #C8C8C8;
+    overflow: hidden;
+}
+
+.text-gray-500 {
+    color: #111111;
 }
 
 

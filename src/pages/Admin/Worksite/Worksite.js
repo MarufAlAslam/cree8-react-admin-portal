@@ -29,7 +29,7 @@ const Worksite = () => {
         console.log(date, dateString);
     }
     return (
-        <div className='p-6'>
+        <div className='py-14 px-20'>
             <div className='top flex justify-between items-center'>
                 <Select
                     defaultValue="All"
@@ -59,7 +59,7 @@ const Worksite = () => {
                     17 March 2023</p>
             </div>
 
-            <WorksiteCards/>
+            <WorksiteCards />
         </div>
     )
 }

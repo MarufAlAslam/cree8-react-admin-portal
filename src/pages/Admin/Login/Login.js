@@ -5,9 +5,9 @@ import LoginForm from './LoginForm'
 
 const Login = () => {
     return (
-        <div className='login min-h-screen'>
+        <div className='login min-h-screen p-40 px-96'>
             <div className='login__container lg:flex w-full'>
-                <div className='login__container__left flex flex-col w-full justify-end items-center lg:w-1/2 min-h-screen'>
+                <div className='login__container__left flex flex-col bg-[#0F4C7D] w-full justify-end items-center lg:w-1/2'>
                     <div className='text-center'>
                         <h2 className='text-white fs-21 mt-auto font-medium'>
                             Building your dreams, one brick at a time
@@ -21,7 +21,7 @@ const Login = () => {
                     <img src={loginImg} className='block mx-auto' alt='' />
                 </div>
 
-                <div className='login__container__right lg:w-1/2 bg-white min-h-screen p-10 flex flex-col justify-center items-center w-full'>
+                <div className='login__container__right lg:w-1/2 bg-white p-10 flex flex-col justify-center items-center w-full'>
                     <div className='w-full'>
                         <img src={logo} alt='' className='block mx-auto mb-6' />
 
