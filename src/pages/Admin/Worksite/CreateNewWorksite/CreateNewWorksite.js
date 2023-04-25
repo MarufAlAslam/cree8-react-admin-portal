@@ -1,4 +1,4 @@
-import { Input, Select, Tooltip } from 'antd';
+import { Button, Input, Select, Tooltip } from 'antd';
 import React from 'react';
 import { FaCheckCircle, FaQuestionCircle, FaTimesCircle } from 'react-icons/fa';
 
@@ -202,6 +202,15 @@ const CreateNewWorksite = () => {
                                 )
                             })
                         }
+                    </div>
+                </div>
+
+
+                <div className='lg:w-1/2 mt-5 w-full mx-auto bg-transparent py-5'>
+                    <div className='text-right'>
+                        <Button className='btn-blue text-white h-[40px] ml-auto flex justify-center items-center'>
+                            Save Changes
+                        </Button>
                     </div>
                 </div>
             </form>
