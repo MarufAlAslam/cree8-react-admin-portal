@@ -1,6 +1,6 @@
 import { Switch } from 'antd'
 import React from 'react'
-import { FaCircle, FaDotCircle, FaInfo, FaInfoCircle } from 'react-icons/fa'
+import { FaCircle, FaInfoCircle } from 'react-icons/fa'
 import img from '../../../assets/images/Admin/immg.png'
 import { Link } from 'react-router-dom'
 
