@@ -2,6 +2,7 @@ import { Button, DatePicker, Select } from 'antd'
 import React from 'react'
 import { FaPlus, FaSearch } from 'react-icons/fa'
 import WorksiteCards from './WorksiteCards'
+import { Link } from 'react-router-dom'
 
 const Worksite = () => {
     const options = [
@@ -44,8 +45,10 @@ const Worksite = () => {
                         <FaSearch className='ml-2' /> <input placeholder='Search by Worksite, Job Number' className='h-[31px] text-sm w-full px-2' />
 
                     </div>
-                    <Button className='btn-blue text-white h-[40px] ml-3 flex justify-center items-center'>
-                        Create New <FaPlus className='ml-2' />
+                    <Button className='btn-blue text-white h-[40px] ml-3 flex justify-center items-center p-0'>
+                        <Link to={'/admin/worksite/create'} className='flex justify-between items-center h-full w-full px-4'>
+                            Create New <FaPlus className='ml-2' />
+                        </Link>
                     </Button>
                 </div>
 

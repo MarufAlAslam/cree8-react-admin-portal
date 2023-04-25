@@ -23,7 +23,7 @@ const Dashboard = () => {
             <div className='top-row mb-6'>
                 <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
                     {companyData.map((item, index) => (
-                        <div className='bg-[#F5F5F5] p-6 rounded-lg hover:bg-[#D5E9FE]' key={index}>
+                        <div className='bg-[#E5E5E5] px-8 py-12 rounded-lg hover:bg-[#D5E9FE]' key={index}>
                             <div className='flex justify-between items-center'>
                                 <div className='flex flex-col w-full'>
                                     <h1 className='text-xl font-semibold'>{item.name}</h1>
@@ -34,7 +34,7 @@ const Dashboard = () => {
                                     </h2>
                                     <div className='flex w-full justify-between items-center'>
                                         <p className='text-gray-500'>{item.details}</p>
-                                        <Link to={item.linkto} className='text-blue btn bg-white px-4 py-2'>
+                                        <Link to={item.linkto} className='text-blue rounded-md btn bg-white px-4 py-2'>
                                             <FaAngleRight />
                                         </Link>
                                     </div>

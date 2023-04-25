@@ -3,23 +3,28 @@ import Login from "../../pages/Admin/Login/Login";
 import AdminLayout from "../../layouts/Admin";
 import Dashboard from "../../pages/Admin/Dashboard/Dashboard";
 import Worksite from "../../pages/Admin/Worksite/Worksite";
+import CreateNewWorksite from "../../pages/Admin/Worksite/CreateNewWorksite/CreateNewWorksite";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Login/>
+        element: <Login />
     },
     {
         path: "/admin",
-        element: <AdminLayout/>,
+        element: <AdminLayout />,
         children: [
             {
                 path: "/admin/dashboard",
-                element: <Dashboard/>
+                element: <Dashboard />
             },
             {
                 path: "/admin/worksite",
-                element: <Worksite/>
+                element: <Worksite />
+            },
+            {
+                path: "/admin/worksite/create",
+                element: <CreateNewWorksite />
             }
         ]
     },

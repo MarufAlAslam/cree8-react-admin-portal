@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
 *{
     font-family: 'Lexend', sans-serif;
+    
+}
+body{
+    background-color: #F5F5F5;
 }
 .login{
     background-color: #D5E9FE;
@@ -68,4 +72,10 @@ input:focus, textarea:focus, select:focus{
 /* tttable */
 .tttable td{
     width: 25%;
+}
+
+
+/* create new worksite */
+.fs-18{
+    font-size: 18px;
 }
