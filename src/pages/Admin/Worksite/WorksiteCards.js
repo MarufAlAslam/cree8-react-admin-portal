@@ -2,82 +2,83 @@ import { Switch } from 'antd'
 import React from 'react'
 import { FaCircle, FaDotCircle, FaInfo, FaInfoCircle } from 'react-icons/fa'
 import img from '../../../assets/images/Admin/immg.png'
+import { Link } from 'react-router-dom'
 
 const WorksiteCards = () => {
     const data = [
         {
-        ontime: true,
-        img: img,
-        title: "Hemingway, Palm Beach",
-        siteManager: "John Smith",
-        cost: "$2008934",
-        jobNumber: 2453,
-        restored: 10,
-        working: 200,
-        finished: 12,
-        absent: 3
-    },
+            ontime: true,
+            img: img,
+            title: "Hemingway, Palm Beach",
+            siteManager: "John Smith",
+            cost: "$2008934",
+            jobNumber: 2453,
+            restored: 10,
+            working: 200,
+            finished: 12,
+            absent: 3
+        },
         {
-        ontime: true,
-        img: img,
-        title: "Hemingway, Palm Beach",
-        siteManager: "John Smith",
-        cost: "$2008934",
-        jobNumber: 2453,
-        restored: 10,
-        working: 200,
-        finished: 12,
-        absent: 3
-    },
+            ontime: true,
+            img: img,
+            title: "Hemingway, Palm Beach",
+            siteManager: "John Smith",
+            cost: "$2008934",
+            jobNumber: 2453,
+            restored: 10,
+            working: 200,
+            finished: 12,
+            absent: 3
+        },
         {
-        ontime: true,
-        img: img,
-        title: "Hemingway, Palm Beach",
-        siteManager: "John Smith",
-        cost: "$2008934",
-        jobNumber: 2453,
-        restored: 10,
-        working: 200,
-        finished: 12,
-        absent: 3
-    },
+            ontime: true,
+            img: img,
+            title: "Hemingway, Palm Beach",
+            siteManager: "John Smith",
+            cost: "$2008934",
+            jobNumber: 2453,
+            restored: 10,
+            working: 200,
+            finished: 12,
+            absent: 3
+        },
         {
-        ontime: true,
-        img: img,
-        title: "Hemingway, Palm Beach",
-        siteManager: "John Smith",
-        cost: "$2008934",
-        jobNumber: 2453,
-        restored: 10,
-        working: 200,
-        finished: 12,
-        absent: 3
-    },
+            ontime: true,
+            img: img,
+            title: "Hemingway, Palm Beach",
+            siteManager: "John Smith",
+            cost: "$2008934",
+            jobNumber: 2453,
+            restored: 10,
+            working: 200,
+            finished: 12,
+            absent: 3
+        },
         {
-        ontime: true,
-        img: img,
-        title: "Hemingway, Palm Beach",
-        siteManager: "John Smith",
-        cost: "$2008934",
-        jobNumber: 2453,
-        restored: 10,
-        working: 200,
-        finished: 12,
-        absent: 3
-    },
+            ontime: true,
+            img: img,
+            title: "Hemingway, Palm Beach",
+            siteManager: "John Smith",
+            cost: "$2008934",
+            jobNumber: 2453,
+            restored: 10,
+            working: 200,
+            finished: 12,
+            absent: 3
+        },
         {
-        ontime: true,
-        img: img,
-        title: "Hemingway, Palm Beach",
-        siteManager: "John Smith",
-        cost: "$2008934",
-        jobNumber: 2453,
-        restored: 10,
-        working: 200,
-        finished: 12,
-        absent: 3
-    },
-]
+            ontime: true,
+            img: img,
+            title: "Hemingway, Palm Beach",
+            siteManager: "John Smith",
+            cost: "$2008934",
+            jobNumber: 2453,
+            restored: 10,
+            working: 200,
+            finished: 12,
+            absent: 3
+        },
+    ]
     return (
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
             {
@@ -95,11 +96,13 @@ const WorksiteCards = () => {
 
                         <div className='text-center my-4'>
                             <img src={item.img} className="block mx-auto mb-3" alt='' />
-                            <p className='text-xl'>
+                            <Link to={`/admin/worksite/details`} state={
+                                { data: item }
+                            } className='text-xl'>
                                 {
                                     item.title
                                 }
-                            </p>
+                            </Link>
 
                             <table className='mt-5 w-full'>
                                 <tbody>
@@ -136,7 +139,7 @@ const WorksiteCards = () => {
                                 </tbody>
                             </table>
 
-                           <hr className='my-4'/>
+                            <hr className='my-4' />
 
                             <table className='w-full tttable'>
                                 <tbody>

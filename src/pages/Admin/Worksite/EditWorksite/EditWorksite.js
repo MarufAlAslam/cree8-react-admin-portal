@@ -1,7 +1,8 @@
 import React from 'react';
 import WorksiteForm from '../../../../shared/WorksiteForm/WorksiteForm';
 
-const CreateNewWorksite = () => {
+const EditWorksite = () => {
+
     return (
         <div className='p-10'>
             <WorksiteForm />
@@ -9,4 +10,4 @@ const CreateNewWorksite = () => {
     );
 };
 
-export default CreateNewWorksite;
+export default EditWorksite;
