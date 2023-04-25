@@ -11,6 +11,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "123",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 2,
@@ -18,6 +25,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Salary",
             cardId: "456",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 3,
@@ -25,6 +39,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "789",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 4,
@@ -32,6 +53,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "123",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 5,
@@ -39,6 +67,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "456",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 6,
@@ -46,6 +81,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "789",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 7,
@@ -53,6 +95,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "123",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 8,
@@ -60,6 +109,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "456",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 9,
@@ -67,6 +123,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "789",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 10,
@@ -74,6 +137,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "123",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 1,
@@ -81,6 +151,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "456",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 11,
@@ -88,6 +165,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "789",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 12,
@@ -95,6 +179,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "123",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
         {
             id: 13,
@@ -102,6 +193,13 @@ const WorkersTable = () => {
             email: "John@cree8.com",
             employment: "Casual",
             cardId: "123",
+            joined: "12/12/2020",
+            shiftworked: "564",
+            hoursWorked: "16452 hrs",
+            productivityAvrgarage: "9.56 over",
+            hourlyAvetage: "9.56 over",
+            induction: "company handbook",
+            status: "Active"
         },
 
     ]
@@ -141,7 +239,7 @@ const WorkersTable = () => {
                     data.map((item, index) => (
                         <tr key={index} className='border-b border-[#F0F0F0]'>
                             <td className='px-4 py-3'>
-                                <Link to={'/admin/personnel/workers/details'} className='flex items-center justify-center'>
+                                <Link to={'/admin/personnel/workers/details'} state={{ data: item }} className='flex items-center justify-center'>
                                     {item.name}
                                 </Link>
                             </td>
