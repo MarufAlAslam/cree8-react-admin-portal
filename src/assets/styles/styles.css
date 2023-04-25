@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
 *{
     font-family: 'Lexend', sans-serif;
+    font-weight: 400;
     
 }
 body{
@@ -33,6 +34,20 @@ a.active, a.active * {
     color: #0F4C7D !important;
     stroke: #0F4C7D;
     font-weight: 500;
+}
+
+.sidebar .flex.active button {
+    color: #0F4C7D;
+    stroke: #0F4C7D;
+    font-weight: 500;
+}
+
+.angle{
+    transition: all 0.3s ease;
+}
+
+.flex.justify-between.items-center.active .angle {
+    transform: rotate(-90deg);
 }
 
 
@@ -78,4 +93,14 @@ input:focus, textarea:focus, select:focus{
 /* create new worksite */
 .fs-18{
     font-size: 18px;
+}
+
+
+
+/* profile */
+.fs-22{
+    font-size: 22px;
+}
+.fs-10{
+    font-size: 10px;
 }

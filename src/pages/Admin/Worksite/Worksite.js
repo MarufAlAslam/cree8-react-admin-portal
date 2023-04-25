@@ -42,7 +42,7 @@ const Worksite = () => {
                 <div className='right flex justify-end items-center'>
                     <DatePicker className='mr-2 p-2 h-[40px]' onChange={onChange} />
                     <div className='border flex items-center p-1 rounded-md w-full'>
-                        <FaSearch className='ml-2' /> <input placeholder='Search by Worksite, Job Number' className='h-[31px] text-sm w-full px-2' />
+                        <FaSearch className='ml-2' /> <input placeholder='Search by Worksite, Job Number' className='h-[31px] bg-transparent text-sm w-full px-2' />
 
                     </div>
                     <Button className='btn-blue text-white h-[40px] ml-3 flex justify-center items-center p-0'>
