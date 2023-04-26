@@ -1,8 +1,8 @@
 import { Button, Dropdown } from "antd";
 import React from "react";
 import { FaPlus, FaSearch } from "react-icons/fa";
-import AddNewWorkerModal from "../Modal/AddNewWorkerModal";
 import FilterTabsManagers from "./FilterTabsManagers";
+import AddNewSiteManagerModal from "../Modal/AddNewSiteManagerModal";
 
 const TopSearchBarManagers = () => {
   const [visible, setVisible] = React.useState(false);
@@ -21,7 +21,7 @@ const TopSearchBarManagers = () => {
   return (
     <>
     {
-      visible && (<AddNewWorkerModal setVisible={setVisible}/>)
+      visible && (<AddNewSiteManagerModal setVisible={setVisible}/>)
     }
     <div className="bg-white p-5 flex justify-between items-center">
       <div className="border border-[#111111] flex items-center p-1 rounded-md w-full lg:w-1/4">
