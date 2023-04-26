@@ -2,8 +2,14 @@ import { Button, Dropdown } from "antd";
 import React from "react";
 import { FaPlus, FaSearch } from "react-icons/fa";
 import FilterTabs from "./FilterTabs";
+import AddNewWorkerModal from "../Modal/AddNewWorkerModal";
 
 const TopSearchBar = () => {
+  const [visible, setVisible] = React.useState(false);
+  const handleAddNew = () => {
+    setVisible(true);
+    console.log("Add New");
+  }
   const items = [
     {
       key: "3",
@@ -13,6 +19,10 @@ const TopSearchBar = () => {
     }
   ];
   return (
+    <>
+    {
+      visible && (<AddNewWorkerModal setVisible={setVisible}/>)
+    }
     <div className="bg-white p-5 flex justify-between items-center">
       <div className="border border-[#111111] flex items-center p-1 rounded-md w-full lg:w-1/4">
         <FaSearch className="ml-2" />{" "}
@@ -35,7 +45,7 @@ const TopSearchBar = () => {
           </Button>
         </Dropdown>
 
-        <Button className="flex justify-center items-center py-3 border border-[#111111] h-[42px]">
+        <Button className="flex justify-center items-center py-3 border border-[#111111] h-[42px]" onClick={handleAddNew}>
           Add New{" "}
           <div className="bg-orange-500 p-2 rounded-md text-white ml-3">
             <FaPlus />
@@ -43,6 +53,7 @@ const TopSearchBar = () => {
         </Button>
       </div>
     </div>
+    </>
   );
 };
 
