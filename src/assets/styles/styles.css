@@ -107,3 +107,14 @@ input:focus, textarea:focus, select:focus{
 .fs-14{
     font-size: 14px;
 }
+
+/* tab btns */
+.bg-transparent{
+    background-color: transparent !important;
+}
+Button span{
+    line-height: 1.2;
+}
+.tab-buttons button{
+    overflow: hidden;
+}
