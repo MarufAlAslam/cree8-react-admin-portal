@@ -143,3 +143,8 @@ Button span{
     position: relative;
     margin: 0 auto;
 }
+
+/* edit site manager */
+.fs-12 {
+    font-size: 12px;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCaretDown, FaEdit, FaSort } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SiteManagerHistoryTable = () => {
   const data = [
@@ -132,9 +133,9 @@ const SiteManagerHistoryTable = () => {
               </td>
               <td className="px-4 py-3">
                 <div className="flex justify-center items-center">
-                  <button className="mx-2">
+                  <Link to="/admin/personnel/site-managers/edit-history" className="mx-2">
                     <FaEdit />
-                  </button>
+                  </Link>
                 </div>
               </td>
             </tr>

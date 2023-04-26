@@ -21,7 +21,7 @@ const WorksiteForm = () => {
         }
     ]
     return (
-        <form>
+        <form className=''>
             <div className='lg:w-1/2 w-full mx-auto bg-white p-5 shadow-sm'>
                 <p className='fs-18 font-bold'>Worksite</p>
 
@@ -186,7 +186,7 @@ const WorksiteForm = () => {
                     {
                         checks.map((check, index) => {
                             return (
-                                <div className='flex justify-between items-center mt-3 py-3 border-b-2 border-gray-200'>
+                                <div key={index} className='flex justify-between items-center mt-3 py-3 border-b-2 border-gray-200'>
                                     <label className='block font-normal'>
                                         {check.title}
                                     </label>
