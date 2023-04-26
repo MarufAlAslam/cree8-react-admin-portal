@@ -118,3 +118,27 @@ Button span{
 .tab-buttons button{
     overflow: hidden;
 }
+
+
+/* profile modal */
+.modal {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    position: relative;
+    margin: 0 auto;
+}

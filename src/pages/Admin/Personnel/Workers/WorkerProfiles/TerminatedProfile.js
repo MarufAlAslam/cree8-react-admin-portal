@@ -3,12 +3,21 @@ import { Button } from 'antd'
 import { FaEdit, FaPlus } from 'react-icons/fa'
 import dp from "../../../../../assets/images/Personnel/dp.png";
 import TerminatedProfileTable from '../../../../../shared/DataTable/TerminatedProfileTable'
+import EditProfileModal from '../../../../../shared/Modal/EditProfileModal';
 
 const TerminatedProfile = ({data}) => {
+  const [modalVisible, setModalVisible] = React.useState(false)
+    const EditModalVisible = () => {
+        setModalVisible(true)
+        // console.log("Edit Modal Visible")
+    }
     data.status = "Terminated"
     return (
         <div>
             <>
+            {
+                modalVisible && (<EditProfileModal setModalVisible={setModalVisible}/>)
+            }
               <div className="details mt-5 bg-white p-4">
                 <div className="profile pb-4 border-b-2 border-[#E9E9E9]">
                   <div className="flex justify-start items-center">
@@ -29,7 +38,7 @@ const TerminatedProfile = ({data}) => {
                                 Terminated
                               </span>
                             )}
-                            <button className="px-3">
+                            <button className="px-3" onClick={EditModalVisible}>
                               <FaEdit />
                             </button>
                           </div>
