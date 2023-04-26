@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaCaretDown, FaEdit, FaInfoCircle, FaTrashAlt } from "react-icons/fa";
 import EditSiteManagerDetailsModal from "../Modal/EditSiteManagerDetailsModal";
+import DeleteSiteManagerModal from "../Modal/DeleteSiteManagerModal";
 
 const SiteManagerTable = () => {
   const data = [
@@ -102,14 +103,27 @@ const SiteManagerTable = () => {
   ];
 
   const [visibleEdit, setVisibleEdit] = useState(false);
+  const [visibleDelete, setVisibleDelete] = useState(false);
+  const [userInfo, setUserInfo] = useState({});
   const visibleEditModal = () => {
     setVisibleEdit(true);
   };
+
+  const visibleDeleteModal = (name, username) => {
+    setVisibleDelete(true);
+    setUserInfo({ name, username });
+  }
   return (
     <>
     {
       visibleEdit && (
         <EditSiteManagerDetailsModal setVisibleEdit={setVisibleEdit}/>
+      )
+    }
+
+    {
+      visibleDelete && (
+        <DeleteSiteManagerModal setVisibleDelete={setVisibleDelete} userInfo={userInfo}/>
       )
     }
       <table className="w-full">
@@ -151,7 +165,9 @@ const SiteManagerTable = () => {
                   <button className="mx-2">
                     <FaInfoCircle />
                   </button>
-                  <button className="mx-2">
+                  <button className="mx-2" onClick={()=>{
+                    visibleDeleteModal(item.name, item.username)
+                  }}>
                     <FaTrashAlt />
                   </button>
                 </div>
