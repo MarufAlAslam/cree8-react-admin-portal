@@ -8,6 +8,7 @@ import WorksiteDetails from "../../pages/Admin/Worksite/WorksiteDetails/Worksite
 import EditWorksite from "../../pages/Admin/Worksite/EditWorksite/EditWorksite";
 import Workers from "../../pages/Admin/Personnel/Workers/Workers";
 import WorkersDetails from "../../pages/Admin/Personnel/Workers/WorkersDetails";
+import SiteManagers from "../../pages/Admin/Personnel/SiteManagers/SiteManagers";
 
 const router = createBrowserRouter([
     {
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
             },
 
 
-            // personnel
+            // personnel - workers
             {
                 path: "/admin/personnel/workers",
                 element: <Workers />
@@ -51,7 +52,14 @@ const router = createBrowserRouter([
             {
                 path: "/admin/personnel/workers/details",
                 element: <WorkersDetails />
-            }
+            },
+
+
+            // personnel - site managers
+            {
+                path: "/admin/personnel/site-managers",
+                element: <SiteManagers />
+            },
         ]
     },
     {
