@@ -9,6 +9,7 @@ import EditWorksite from "../../pages/Admin/Worksite/EditWorksite/EditWorksite";
 import Workers from "../../pages/Admin/Personnel/Workers/Workers";
 import WorkersDetails from "../../pages/Admin/Personnel/Workers/WorkersDetails";
 import SiteManagers from "../../pages/Admin/Personnel/SiteManagers/SiteManagers";
+import SiteManagerHistory from "../../pages/Admin/Personnel/SiteManagers/SiteManagerHistory";
 
 const router = createBrowserRouter([
     {
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
             {
                 path: "/admin/personnel/site-managers",
                 element: <SiteManagers />
+            },
+            {
+                path: "/admin/personnel/site-managers/history",
+                element: <SiteManagerHistory />
             },
         ]
     },

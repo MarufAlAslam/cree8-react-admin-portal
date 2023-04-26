@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { FaCaretDown, FaEdit, FaInfoCircle, FaTrashAlt } from "react-icons/fa";
+import { FaCaretDown, FaEdit, FaTrashAlt } from "react-icons/fa";
+import {BiHistory} from "react-icons/bi"
 import EditSiteManagerDetailsModal from "../Modal/EditSiteManagerDetailsModal";
+import {Link} from "react-router-dom"
 import DeleteSiteManagerModal from "../Modal/DeleteSiteManagerModal";
 
 const SiteManagerTable = () => {
@@ -162,9 +164,9 @@ const SiteManagerTable = () => {
                   <button className="mx-2" onClick={visibleEditModal}>
                     <FaEdit />
                   </button>
-                  <button className="mx-2">
-                    <FaInfoCircle />
-                  </button>
+                  <Link to="/admin/personnel/site-managers/history" className="mx-2">
+                    <BiHistory />
+                  </Link>
                   <button className="mx-2" onClick={()=>{
                     visibleDeleteModal(item.name, item.username)
                   }}>
