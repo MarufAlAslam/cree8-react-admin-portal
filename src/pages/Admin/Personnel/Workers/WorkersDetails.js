@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import TabBtns from "../../../../shared/Workers/TabBtns";
 import ActiveProfile from "./WorkerProfiles/ActiveProfile";
 import TerminatedProfile from "./WorkerProfiles/TerminatedProfile";
+import AllProfiles from "./WorkerProfiles/AllProfiles";
 
 const WorkersDetails = () => {
   const location = useLocation();
@@ -37,7 +38,7 @@ const WorkersDetails = () => {
           ) : tabClass === "tab-terminated" ? (
             <TerminatedProfile data={data}/>
           ) : (
-            "all"
+            <AllProfiles/>
           )}
         </div>
       </div>

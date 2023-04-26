@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaEdit } from 'react-icons/fa';
 
-const TerminatedProfileTable = () => {
+const TerminatedProfileTable = ({hasStatus}) => {
     const data = [
         {
             id: 1,
