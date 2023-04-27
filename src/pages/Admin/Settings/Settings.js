@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import SettingsSearchBar from "./SettingsSearchBar/SettingsSearchBar";
+import SettingsTable from "../../../shared/DataTable/SettingsTable";
 
 const Settings = () => {
-    return (
-        <div>
-            Settings
-        </div>
-    )
-}
+  return (
+    <div className="p-6">
+      <div className="pt-4 bg-white">
+        <SettingsSearchBar />
+      </div>
 
-export default Settings
+      <div className="pt-4 bg-white">
+        <SettingsTable />
+      </div>
+    </div>
+  );
+};
+
+export default Settings;
