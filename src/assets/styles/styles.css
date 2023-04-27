@@ -36,7 +36,7 @@ a.active, a.active * {
     font-weight: 500;
 }
 
-.sidebar .flex.active button {
+.sidebar .active button {
     color: #0F4C7D;
     stroke: #0F4C7D;
     font-weight: 500;
@@ -45,8 +45,11 @@ a.active, a.active * {
 .angle{
     transition: all 0.3s ease;
 }
-
-.flex.justify-between.items-center.active .angle {
+.sidebar .active .hidden {
+    display: block;
+    transition: 0.5s;
+}
+.sidebar .active .angle {
     transform: rotate(-90deg);
 }
 

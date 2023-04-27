@@ -62,8 +62,8 @@ const Sidebar = () => {
                                     </div>
                                     <ul className={`mt-3 ${submenu}`}>
                                         {item.child.map((item, index) => (
-                                            <li className='py-3 px-8' key={index}>
-                                                <NavLink to={item.path} className='flex justify-start items-center'>
+                                            <li className='py-1 px-5' key={index}>
+                                                <NavLink to={item.path} className='flex justify-start items-center text-sm'>
                                                     {item.icon}
                                                     {item.name}
                                                 </NavLink>
