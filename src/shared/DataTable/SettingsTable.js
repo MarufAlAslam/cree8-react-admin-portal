@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { FaCaretDown, FaEdit, FaTrashAlt } from "react-icons/fa";
 import {BiHistory} from "react-icons/bi"
-import EditSiteManagerDetailsModal from "../Modal/EditSiteManagerDetailsModal";
 import {Link} from "react-router-dom"
-import DeleteSiteManagerModal from "../Modal/DeleteSiteManagerModal";
 import EditAdminModal from "../Modal/EditAdminModal";
+import DeleteAdminModal from "../Modal/DeleteAdminModal";
 
 const SettingsTable = () => {
   const data = [
     {
       id: 1,
-      name: "Adrian Newton",
+      name: "Test Name",
       username: "Adrian@cree8.com",
     },
     {
@@ -107,14 +106,14 @@ const SettingsTable = () => {
 
   const [visibleEdit, setVisibleEdit] = useState(false);
   const [visibleDelete, setVisibleDelete] = useState(false);
-  const [userInfo, setUserInfo] = useState({});
+  const [adminInfo, setAdminInfo] = useState({});
   const visibleEditModal = () => {
     setVisibleEdit(true);
   };
 
   const visibleDeleteModal = (name, username) => {
     setVisibleDelete(true);
-    setUserInfo({ name, username });
+    setAdminInfo({ name, username });
   }
   return (
     <>
@@ -126,7 +125,7 @@ const SettingsTable = () => {
 
     {
       visibleDelete && (
-        <DeleteSiteManagerModal setVisibleDelete={setVisibleDelete} userInfo={userInfo}/>
+        <DeleteAdminModal setVisibleDelete={setVisibleDelete} adminInfo={adminInfo}/>
       )
     }
       <table className="w-full">
