@@ -30,7 +30,6 @@ const SettingsTopBar = () => {
       </div>
     </div>
   );
-  
 };
 
 export default SettingsTopBar;
