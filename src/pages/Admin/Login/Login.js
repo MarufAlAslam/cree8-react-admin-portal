@@ -5,7 +5,7 @@ import LoginForm from './LoginForm'
 
 const Login = () => {
     return (
-        <div className='login min-h-screen p-40 px-96'>
+        <div className='login min-h-screen 2xl:p-40 2xl:px-96 xl:p-40'>
             <div className='login__container lg:flex w-full'>
                 <div className='login__container__left flex flex-col bg-[#0F4C7D] w-full justify-end items-center lg:w-1/2'>
                     <div className='text-center'>
