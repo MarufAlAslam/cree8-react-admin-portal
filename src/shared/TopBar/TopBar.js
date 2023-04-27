@@ -20,9 +20,9 @@ const TopBar = () => {
                         <Link to='/admin/settings'>
                             <FaCog className='ml-5 text-2xl' />
                         </Link>
-                        <a href='/'>
+                        <Link to='/workers/dashboard'>
                             <img src={avatar} className='ml-5' alt='' />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

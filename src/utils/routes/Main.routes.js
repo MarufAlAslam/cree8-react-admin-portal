@@ -13,6 +13,8 @@ import SiteManagerHistory from "../../pages/Admin/Personnel/SiteManagers/SiteMan
 import EditSiteManagerHistory from "../../pages/Admin/Personnel/SiteManagers/EditSiteManagerHistory";
 import Settings from "../../pages/Admin/Settings/Settings";
 import SettingsLaout from "../../layouts/SettingsLayout";
+import WorkersLayout from "../../layouts/Workers";
+import WorkersDashboard from "../../pages/Workers/WorkersDashboard";
 
 const router = createBrowserRouter([
     {
@@ -78,6 +80,8 @@ const router = createBrowserRouter([
             },
         ]
     },
+
+    // admin settings
     {
         path: "/admin/settings",
         element: <SettingsLaout/>,
@@ -85,6 +89,23 @@ const router = createBrowserRouter([
             {
                 path: "/admin/settings",
                 element: <Settings />
+            }
+        ]
+    },
+    
+
+    // workers dashboard
+    {
+        path: "/workers",
+        element: <WorkersLayout/>,
+        children: [
+            {
+                path: "/workers",
+                element: <WorkersDashboard />
+            },
+            {
+                path: "/workers/dashboard",
+                element: <WorkersDashboard />
             }
         ]
     },
