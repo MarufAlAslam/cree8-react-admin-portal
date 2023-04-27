@@ -153,6 +153,17 @@ Button span{
 }
 
 
+/* making fixed height body */
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+.content-holder {
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+}
+
+
 /* login responsive */
 
 @media screen and (max-width: 1600px){
