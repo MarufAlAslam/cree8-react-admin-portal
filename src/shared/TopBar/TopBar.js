@@ -5,6 +5,8 @@ import avatar from "../../assets/images/Admin/avatar.png"
 import { FaSearch } from 'react-icons/fa'
 import { FaCog } from 'react-icons/fa'
 
+import { Link } from 'react-router-dom'
+
 const TopBar = () => {
     return (
         <div className='topbar py-3'>
@@ -15,9 +17,9 @@ const TopBar = () => {
                         <a href='/'>
                             <FaSearch className='ml-5 text-2xl' />
                         </a>
-                        <a href='/'>
+                        <Link to='/admin/settings'>
                             <FaCog className='ml-5 text-2xl' />
-                        </a>
+                        </Link>
                         <a href='/'>
                             <img src={avatar} className='ml-5' alt='' />
                         </a>
