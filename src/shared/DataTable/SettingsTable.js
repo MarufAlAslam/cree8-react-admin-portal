@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaCaretDown, FaEdit, FaTrashAlt } from "react-icons/fa";
-import {BiHistory} from "react-icons/bi"
-import {Link} from "react-router-dom"
+import { BiHistory } from "react-icons/bi";
+import { Link } from "react-router-dom";
 import EditAdminModal from "../Modal/EditAdminModal";
 import DeleteAdminModal from "../Modal/DeleteAdminModal";
 
@@ -114,20 +114,17 @@ const SettingsTable = () => {
   const visibleDeleteModal = (name, username) => {
     setVisibleDelete(true);
     setAdminInfo({ name, username });
-  }
+  };
   return (
     <>
-    {
-      visibleEdit && (
-        <EditAdminModal setVisibleEdit={setVisibleEdit}/>
-      )
-    }
+      {visibleEdit && <EditAdminModal setVisibleEdit={setVisibleEdit} />}
 
-    {
-      visibleDelete && (
-        <DeleteAdminModal setVisibleDelete={setVisibleDelete} adminInfo={adminInfo}/>
-      )
-    }
+      {visibleDelete && (
+        <DeleteAdminModal
+          setVisibleDelete={setVisibleDelete}
+          adminInfo={adminInfo}
+        />
+      )}
       <table className="w-full">
         <thead className="bg-[#E8F3FF] text-center">
           <tr className="text-left">
@@ -147,7 +144,7 @@ const SettingsTable = () => {
           </tr>
         </thead>
         <tbody className="bg-white">
-          {data.map((item, index) => (
+          {data?.map((item, index) => (
             <tr key={index} className="border-b border-[#F0F0F0]">
               <td className="px-4 py-3">
                 <div className="flex items-center justify-center">
@@ -164,12 +161,18 @@ const SettingsTable = () => {
                   <button className="mx-2" onClick={visibleEditModal}>
                     <FaEdit />
                   </button>
-                  <Link to="/admin/personnel/site-managers/history" className="mx-2">
+                  <Link
+                    to="/admin/personnel/site-managers/history"
+                    className="mx-2"
+                  >
                     <BiHistory />
                   </Link>
-                  <button className="mx-2" onClick={()=>{
-                    visibleDeleteModal(item.name, item.username)
-                  }}>
+                  <button
+                    className="mx-2"
+                    onClick={() => {
+                      visibleDeleteModal(item.name, item.username);
+                    }}
+                  >
                     <FaTrashAlt />
                   </button>
                 </div>

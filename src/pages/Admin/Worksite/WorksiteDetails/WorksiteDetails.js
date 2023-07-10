@@ -1,15 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+// import { Link } from 'react-router-dom';
+import DetailsTop from "./DetailsTop";
+import WorksiteTabs from "./WorksiteTabs";
 
 const WorksiteDetails = () => {
-    return (
-        <div className='p-10'>
-            Worksite Details Coming Soon
-            <Link to={'/admin/worksite/edit'} className='btn btn-blue ml-2 px-5 py-2 rounded-sm' >
-                Edit
-            </Link>
-        </div>
-    );
+  return (
+    <div className="p-6">
+      <div className="bg-white p-4">
+        <DetailsTop />
+      </div>
+      <div className="mt-5 bg-white p-4">
+        <WorksiteTabs />
+      </div>
+    </div>
+  );
 };
 
 export default WorksiteDetails;

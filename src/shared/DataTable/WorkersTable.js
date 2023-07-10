@@ -243,7 +243,7 @@ const WorkersTable = ({ hasStatus }) => {
         </tr>
       </thead>
       <tbody className="bg-white">
-        {data.map((item, index) => (
+        {data?.map((item, index) => (
           <tr key={index} className="border-b border-[#F0F0F0]">
             <td className="px-4 py-3">
               <Link

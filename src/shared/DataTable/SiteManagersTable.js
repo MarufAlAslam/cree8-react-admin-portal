@@ -1,133 +1,47 @@
 import React, { useState } from "react";
 import { FaCaretDown, FaEdit, FaTrashAlt } from "react-icons/fa";
-import {BiHistory} from "react-icons/bi"
+import { BiHistory } from "react-icons/bi";
 import EditSiteManagerDetailsModal from "../Modal/EditSiteManagerDetailsModal";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import DeleteSiteManagerModal from "../Modal/DeleteSiteManagerModal";
 
-const SiteManagerTable = () => {
-  const data = [
-    {
-      id: 1,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 2,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 3,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 4,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 5,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 6,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 7,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-    {
-      id: 8,
-      name: "Adrian Newton",
-      username: "Adrian@cree8.com",
-    },
-  ];
-
+const SiteManagerTable = ({ data, setData, handle }) => {
   const [visibleEdit, setVisibleEdit] = useState(false);
   const [visibleDelete, setVisibleDelete] = useState(false);
-  const [userInfo, setUserInfo] = useState({});
-  const visibleEditModal = () => {
+  const visibleEditModal = (item, index) => {
+    setData({
+      ...data,
+      selectedData: { ...item, index: index },
+    });
     setVisibleEdit(true);
   };
 
-  const visibleDeleteModal = (name, username) => {
+  const visibleDeleteModal = (item, index) => {
+    setData({
+      ...data,
+      selectedData: { ...item, index: index },
+    });
     setVisibleDelete(true);
-    setUserInfo({ name, username });
-  }
+  };
   return (
     <>
-    {
-      visibleEdit && (
-        <EditSiteManagerDetailsModal setVisibleEdit={setVisibleEdit}/>
-      )
-    }
+      {visibleEdit && (
+        <EditSiteManagerDetailsModal
+          setVisibleEdit={setVisibleEdit}
+          data={data}
+          setData={setData}
+          hanle={handle}
+        />
+      )}
 
-    {
-      visibleDelete && (
-        <DeleteSiteManagerModal setVisibleDelete={setVisibleDelete} userInfo={userInfo}/>
-      )
-    }
+      {visibleDelete && (
+        <DeleteSiteManagerModal
+          setVisibleDelete={setVisibleDelete}
+          data={data}
+          setData={setData}
+          handle={handle}
+        />
+      )}
       <table className="w-full">
         <thead className="bg-[#E8F3FF] text-center">
           <tr className="text-left">
@@ -147,7 +61,7 @@ const SiteManagerTable = () => {
           </tr>
         </thead>
         <tbody className="bg-white">
-          {data.map((item, index) => (
+          {data?.data?.map((item, index) => (
             <tr key={index} className="border-b border-[#F0F0F0]">
               <td className="px-4 py-3">
                 <div className="flex items-center justify-center">
@@ -156,20 +70,29 @@ const SiteManagerTable = () => {
               </td>
               <td className="px-4 py-3">
                 <div className="flex items-center justify-center">
-                  {item.username}
+                  {item.email}
                 </div>
               </td>
               <td className="px-4 py-3">
                 <div className="flex items-center justify-center">
-                  <button className="mx-2" onClick={visibleEditModal}>
+                  <button
+                    className="mx-2"
+                    onClick={(e) => visibleEditModal(item, index)}
+                  >
                     <FaEdit />
                   </button>
-                  <Link to="/admin/personnel/site-managers/history" className="mx-2">
+                  <Link
+                    to="/admin/personnel/site-managers/history"
+                    className="mx-2"
+                  >
                     <BiHistory />
                   </Link>
-                  <button className="mx-2" onClick={()=>{
-                    visibleDeleteModal(item.name, item.username)
-                  }}>
+                  <button
+                    className="mx-2"
+                    onClick={() => {
+                      visibleDeleteModal(item, index);
+                    }}
+                  >
                     <FaTrashAlt />
                   </button>
                 </div>

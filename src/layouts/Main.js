@@ -1,11 +1,17 @@
-import React from 'react'
-import { RouterProvider } from 'react-router-dom'
-import router from '../utils/routes/Main.routes'
+import React, { createContext, useContext, useState } from "react";
+import { RouterProvider } from "react-router-dom";
+import router from "../utils/routes/Main.routes";
+
+export const AppContext = createContext();
 
 const Main = () => {
-    return (
-        <RouterProvider router={router}></RouterProvider>
-    )
-}
+  const [data, setData] = useState();
 
-export default Main
+  return (
+    <AppContext.Provider value={[data, setData]}>
+      <RouterProvider router={router}></RouterProvider>
+    </AppContext.Provider>
+  );
+};
+
+export default Main;

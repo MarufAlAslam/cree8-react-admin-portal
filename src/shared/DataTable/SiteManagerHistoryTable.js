@@ -114,7 +114,7 @@ const SiteManagerHistoryTable = () => {
           </tr>
         </thead>
         <tbody className="bg-white">
-          {data.map((item, index) => (
+          {data?.map((item, index) => (
             <tr key={index} className="border-b border-[#F0F0F0]">
               <td className="px-4 py-3">
                 <div className="flex items-center justify-center">
@@ -133,7 +133,10 @@ const SiteManagerHistoryTable = () => {
               </td>
               <td className="px-4 py-3">
                 <div className="flex justify-center items-center">
-                  <Link to="/admin/personnel/site-managers/edit-history" className="mx-2">
+                  <Link
+                    to="/admin/personnel/site-managers/edit-history"
+                    className="mx-2"
+                  >
                     <FaEdit />
                   </Link>
                 </div>
