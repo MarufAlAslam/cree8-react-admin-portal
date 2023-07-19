@@ -102,6 +102,8 @@ const InspectionTable = () => {
   const visibleDeleteModal = () => {
     setVisibleDelete(true);
   };
+
+  
   return (
     <>
       {visibleEdit && <EditInspection setVisibleEdit={setVisibleEdit} />}

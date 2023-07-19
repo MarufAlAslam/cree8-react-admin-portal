@@ -465,3 +465,14 @@ a.sidebar-menu-item.active * {
   fill: #002f55;
   color: #002f55;
 }
+
+.ant-tabs-nav-list {
+  position: relative;
+  top: 2px;
+  padding-bottom: 2px;
+}
+
+.prTab .ant-tabs-nav {
+  background: #E8E8E8;
+  padding: 10px 15px;
+}
